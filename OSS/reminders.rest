@@ -1,0 +1,35 @@
+@packageId = UBXzlB35hAsPoPXPAxwAAO3mnpA=
+
+### Retrieves the Reminder Schedule of a package
+get {{hostname}}/api/packages/{{packageId}}/reminders
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Creates a Reminder Schedule for a package
+post {{hostname}}/api/packages/{{packageId}}/reminders
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "intervalInDays": 3,
+  "packageId": "{{packageId}}",
+  "repetitionsCount": 3,
+  "startInDaysDelay": 3
+}
+
+### Updates the Reminder Schedule of a package  
+put {{hostname}}/api/packages/{{packageId}}/reminders
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "intervalInDays": 2,
+  "packageId": "{{packageId}}",
+  "repetitionsCount": 2,
+  "startInDaysDelay": 2
+}
+
+### Deletes the Reminder Schedule of a package
+delete {{hostname}}/api/packages/{{packageId}}/reminders
+Accept: application/json
+Authorization: Basic {{api}}

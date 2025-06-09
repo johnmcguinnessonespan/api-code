@@ -1,0 +1,53 @@
+@packageId= Zu8tF7DjkW7CMYi5vbbpDL8FcZo=
+@roleId=
+@attachmentId=
+@fileId=
+
+### Downloads all attachments.
+get {{hostname}}/api/packages/{{packageId}}/attachment/zip
+Accept: application/zip
+Authorization: Basic {{api}}
+
+### Downloads all attachments for a specified Role.
+get {{hostname}}/api/packages/{packageId}/attachment/zip/{{roleId}}
+Accept: application/zip
+Authorization: Basic {{api}}
+
+### Downloads an attachment.
+get {{hostname}}/api/packages/{packageId}/attachment/{{attachmentId}}
+Accept: application/octet-stream
+Authorization: Basic {{api}}
+ 
+### Adds an attachment.
+post {{hostname}}/api/packages/{packageId}/attachment/{{attachmentId}}
+Accept: application/octet-stream
+Authorization: Basic {{api}}
+
+{
+    -- file
+}
+
+### Deletes attachment file
+delete {{hostname}}/api/packages/{packageId}/attachment/{{attachmentId}}/file/{{fileId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Downloads an attachment.
+get {{hostname}}/api/packages/{packageId}/attachment/{{attachmentId}}/file/{{fileId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Checks for Signer uploads.
+get {{hostname}}/api/packages/{packageId}/attachment/{attachmentId}/exists
+Accept: application/octet-stream
+Authorization: Basic {{api}}
+
+### Checks for a specific attachment.
+get {{hostname}}/api/packages/{packageId}/attachment/{{attachmentId}}/file/{{fileId}}/exists
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Checks for attachments and uploads by a specified Role
+get {{hostname}}/api/packages/{packageId}/attachment/zip/{roleId}/exists
+Accept: application/json
+Authorization: Basic {{api}}

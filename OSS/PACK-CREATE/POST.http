@@ -1,0 +1,669 @@
+###
+//get {{hostname}}/api/packages
+post {{hostname}}/api/packages
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "autocomplete": true,
+  "consent": "default-consent",
+  "description": "",
+  "documents": [
+    {
+      "status": "",
+      "externalSigned": false,
+      "base64Content": null,
+      "index": 0,
+      "fields": [],
+      "description": "Debe ser aceptado antes de comenzar el proceso de firma",
+      "approvals": [],
+      "pages": [
+        {
+          "index": 0,
+          "version": 0,
+          "top": 0.0,
+          "id": "",
+          "width": 796.0,
+          "height": 1030.0,
+          "left": 0.0
+        }
+      ],
+      "id": "default-consent",
+      "imprintFields": [],
+      "extractionTypes": [],
+      "tagged": false,
+      "extract": false,
+      "data": {
+        "ese_document_texttag_extract_needed": "false"
+      },
+      "external": null,
+      "signerVerificationToken": null,
+      "signedHash": null,
+      "name": "Consentimiento de firmas eléctronicas",
+      "size": 150620
+    },
+    {
+      "status": "",
+      "externalSigned": false,
+      "base64Content": null,
+      "index": 1,
+      "fields": [],
+      "description": "",
+      "approvals": [
+        {
+          "acceptedPackageTimezone": "",
+          "fromFile": false,
+          "fromFileData": null,
+          "fields": [
+            {
+              "horizontalTextAlignment": "center",
+              "tooltip": "",
+              "notary": false,
+              "type": "SIGNATURE",
+              "binding": null,
+              "top": 195.0,
+              "fontSize": null,
+              "page": 0,
+              "id": "wKrKczF26wYT",
+              "validation": null,
+              "left": 316.0,
+              "extract": false,
+              "data": null,
+              "subtype": "FULLNAME",
+              "width": 164.0,
+              "height": 37.0,
+              "extractAnchor": null,
+              "formattedValue": "",
+              "value": "",
+              "name": ""
+            }
+          ],
+          "optional": false,
+          "id": "c9zq7rdSXcwS",
+          "data": null,
+          "disabled": false,
+          "role": "df5f43e1-592a-4767-a3b4-576cdb8834d6",
+          "accepted": null,
+          "enforceCaptureSignature": false,
+          "signed": null,
+          "name": ""
+        },
+        {
+          "acceptedPackageTimezone": "",
+          "fromFile": false,
+          "fromFileData": null,
+          "fields": [
+            {
+              "horizontalTextAlignment": "center",
+              "tooltip": "",
+              "notary": false,
+              "type": "SIGNATURE",
+              "binding": null,
+              "top": 242.0,
+              "fontSize": null,
+              "page": 0,
+              "id": "FXXJC5eL0BQ0",
+              "validation": null,
+              "left": 316.0,
+              "extract": false,
+              "data": null,
+              "subtype": "FULLNAME",
+              "width": 164.0,
+              "height": 37.0,
+              "extractAnchor": null,
+              "formattedValue": "",
+              "value": "",
+              "name": ""
+            }
+          ],
+          "optional": false,
+          "id": "TLaZ1gkXU2MW",
+          "data": null,
+          "disabled": false,
+          "role": "13651280-8e39-46bd-9aec-0b0abd751cbc",
+          "accepted": null,
+          "enforceCaptureSignature": false,
+          "signed": null,
+          "name": ""
+        },
+        {
+          "acceptedPackageTimezone": "",
+          "fromFile": false,
+          "fromFileData": null,
+          "fields": [
+            {
+              "horizontalTextAlignment": "center",
+              "tooltip": "",
+              "notary": false,
+              "type": "SIGNATURE",
+              "binding": null,
+              "top": 289.0,
+              "fontSize": null,
+              "page": 0,
+              "id": "StLV7K0wqNcK",
+              "validation": null,
+              "left": 316.0,
+              "extract": false,
+              "data": null,
+              "subtype": "FULLNAME",
+              "width": 164.0,
+              "height": 37.0,
+              "extractAnchor": null,
+              "formattedValue": "",
+              "value": "",
+              "name": ""
+            }
+          ],
+          "optional": false,
+          "id": "um5ri6skG5I3",
+          "data": null,
+          "disabled": false,
+          "role": "a8f1a7d7-4bb9-43dc-add6-62e8eb803b6a",
+          "accepted": null,
+          "enforceCaptureSignature": false,
+          "signed": null,
+          "name": ""
+        }
+      ],
+      "pages": [
+        {
+          "index": 0,
+          "version": 0,
+          "top": 0.0,
+          "id": "",
+          "width": 796.0,
+          "height": 1030.0,
+          "left": 0.0
+        }
+      ],
+      "id": "6dc9e570a40111e8df9176f849e2225e37b950d8d914fcba",
+      "imprintFields": [],
+      "extractionTypes": [],
+      "tagged": false,
+      "extract": false,
+      "data": {
+        "ese_document_texttag_extract_needed": "false"
+      },
+      "external": null,
+      "signerVerificationToken": null,
+      "signedHash": null,
+      "name": "pdfAgreement",
+      "size": 57508
+    }
+  ],
+  "due": null,
+  "emailMessage": "",
+  "language": "en-GB",
+  "limits": null,
+  "messages": [],
+  "notarized": false,
+  "notaryRoleId": null,
+  "roles": [
+    {
+      "index": 0,
+      "type": "SENDER",
+      "id": "5owknvIis0I7",
+      "emailMessage": {
+        "content": ""
+      },
+      "data": null,
+      "deliverDocumentsByEmail": true,
+      "reassign": false,
+      "downloadEvidenceSummaryBySigner": true,
+      "specialTypes": [],
+      "attachmentRequirements": [],
+      "locked": false,
+      "signers": [
+        {
+          "address": null,
+          "company": "TESTER",
+          "timezoneId": "",
+          "created": "2024-09-05T07:59:56Z",
+          "email": "john.mcguinness@skiff.com",
+          "external": null,
+          "firstName": "JOHN",
+          "language": "en",
+          "lastName": "SKIFF",
+          "phone": "",
+          "professionalIdentityFields": [],
+          "signature": null,
+          "title": null,
+          "updated": "2024-09-05T07:59:55Z",
+          "userCustomFields": [],
+          "specialTypes": [],
+          "passwordTimestamp": null,
+          "orderLastNameFirstName": false,
+          "idvAuthentication": null,
+          "digipassAuthentication": false,
+          "followTransactionLanguage": true,
+          "relationshipToNotary": null,
+          "group": null,
+          "id": "snUBlFJYJkoB",
+          "data": null,
+          "signerType": "ACCOUNT_SENDER",
+          "auth": {
+            "scheme": "NONE",
+            "idvWorkflow": null,
+            "challenges": []
+          },
+          "knowledgeBasedAuthentication": null,
+          "externalAuthentication": null,
+          "ssoConfigured": false,
+          "delivery": {
+            "provider": false,
+            "download": true,
+            "email": true
+          },
+          "name": ""
+        }
+      ],
+      "name": "Owner"
+    },
+    {
+      "index": 1,
+      "type": "SIGNER",
+      "id": "df5f43e1-592a-4767-a3b4-576cdb8834d6",
+      "emailMessage": {
+        "content": ""
+      },
+      "data": null,
+      "deliverDocumentsByEmail": false,
+      "reassign": false,
+      "downloadEvidenceSummaryBySigner": true,
+      "specialTypes": [],
+      "attachmentRequirements": [],
+      "locked": false,
+      "signers": [
+        {
+          "address": null,
+          "company": "",
+          "timezoneId": "",
+          "created": "2024-09-05T07:59:56Z",
+          "email": "john.cyclist.mcguinness+one@gmail.com",
+          "external": null,
+          "firstName": "John",
+          "language": "en-GB",
+          "lastName": "ONE",
+          "phone": "",
+          "professionalIdentityFields": [],
+          "signature": null,
+          "title": "",
+          "updated": "2024-12-09T13:30:07Z",
+          "userCustomFields": [],
+          "specialTypes": [],
+          "passwordTimestamp": null,
+          "orderLastNameFirstName": false,
+          "idvAuthentication": null,
+          "digipassAuthentication": false,
+          "followTransactionLanguage": true,
+          "relationshipToNotary": null,
+          "group": null,
+          "id": "3d170ca8-7c3a-4484-ae11-6cd45b771b5b",
+          "data": null,
+          "signerType": "EXTERNAL_SIGNER",
+          "auth": {
+            "scheme": "NONE",
+            "idvWorkflow": null,
+            "challenges": []
+          },
+          "knowledgeBasedAuthentication": null,
+          "externalAuthentication": null,
+          "ssoConfigured": false,
+          "delivery": {
+            "provider": false,
+            "download": false,
+            "email": false
+          },
+          "name": ""
+        }
+      ],
+      "name": "Signer1"
+    },
+    {
+      "index": 2,
+      "type": "SIGNER",
+      "id": "13651280-8e39-46bd-9aec-0b0abd751cbc",
+      "emailMessage": {
+        "content": ""
+      },
+      "data": null,
+      "deliverDocumentsByEmail": false,
+      "reassign": false,
+      "downloadEvidenceSummaryBySigner": true,
+      "specialTypes": [],
+      "attachmentRequirements": [],
+      "locked": false,
+      "signers": [
+        {
+          "address": null,
+          "company": "",
+          "timezoneId": "",
+          "created": "2024-12-09T13:28:09Z",
+          "email": "john.cyclist.mcguinness+two@gmail.com",
+          "external": null,
+          "firstName": "John",
+          "language": "en-GB",
+          "lastName": "TWO",
+          "phone": "",
+          "professionalIdentityFields": [],
+          "signature": null,
+          "title": "",
+          "updated": "2024-12-09T13:28:52Z",
+          "userCustomFields": [],
+          "specialTypes": [],
+          "passwordTimestamp": null,
+          "orderLastNameFirstName": false,
+          "idvAuthentication": null,
+          "digipassAuthentication": false,
+          "followTransactionLanguage": true,
+          "relationshipToNotary": null,
+          "group": null,
+          "id": "2de5ca83-9b9f-4ed0-bf30-a42b3a8c6f58",
+          "data": null,
+          "signerType": "EXTERNAL_SIGNER",
+          "auth": {
+            "scheme": "NONE",
+            "idvWorkflow": null,
+            "challenges": []
+          },
+          "knowledgeBasedAuthentication": null,
+          "externalAuthentication": null,
+          "ssoConfigured": false,
+          "delivery": {
+            "provider": false,
+            "download": false,
+            "email": false
+          },
+          "name": ""
+        }
+      ],
+      "name": "Signer2"
+    },
+    {
+      "index": 3,
+      "type": "SIGNER",
+      "id": "a8f1a7d7-4bb9-43dc-add6-62e8eb803b6a",
+      "emailMessage": {
+        "content": ""
+      },
+      "data": null,
+      "deliverDocumentsByEmail": false,
+      "reassign": false,
+      "downloadEvidenceSummaryBySigner": true,
+      "specialTypes": [],
+      "attachmentRequirements": [],
+      "locked": false,
+      "signers": [
+        {
+          "address": null,
+          "company": "",
+          "timezoneId": "",
+          "created": "2024-12-09T13:29:10Z",
+          "email": "john.cyclist.mcguinness+three@gmail.com",
+          "external": null,
+          "firstName": "John",
+          "language": "en-GB",
+          "lastName": "THREE",
+          "phone": "",
+          "professionalIdentityFields": [],
+          "signature": null,
+          "title": "",
+          "updated": "2024-12-09T13:30:01Z",
+          "userCustomFields": [],
+          "specialTypes": [],
+          "passwordTimestamp": null,
+          "orderLastNameFirstName": false,
+          "idvAuthentication": null,
+          "digipassAuthentication": false,
+          "followTransactionLanguage": true,
+          "relationshipToNotary": null,
+          "group": null,
+          "id": "a326486b-ed59-4e65-afb2-81d01988099e",
+          "data": null,
+          "signerType": "EXTERNAL_SIGNER",
+          "auth": {
+            "scheme": "NONE",
+            "idvWorkflow": null,
+            "challenges": []
+          },
+          "knowledgeBasedAuthentication": null,
+          "externalAuthentication": null,
+          "ssoConfigured": false,
+          "delivery": {
+            "provider": false,
+            "download": false,
+            "email": false
+          },
+          "name": ""
+        }
+      ],
+      "name": "Signer3"
+    }
+  ],
+  "sender": {
+    "address": {
+      "state": null,
+      "zipcode": null,
+      "address1": null,
+      "address2": null,
+      "city": null,
+      "country": null
+    },
+    "company": "TESTER",
+    "timezoneId": "Europe/London",
+    "created": "2023-04-07T08:36:43Z",
+    "email": "john.mcguinness@skiff.com",
+    "external": null,
+    "firstName": "JOHN",
+    "language": "en",
+    "lastName": "SKIFF",
+    "phone": null,
+    "professionalIdentityFields": [],
+    "signature": null,
+    "title": null,
+    "updated": "2024-10-24T07:32:25Z",
+    "userCustomFields": [],
+    "specialTypes": [],
+    "passwordTimestamp": 1680856603000,
+    "orderLastNameFirstName": false,
+    "type": "MANAGER",
+    "status": "ACTIVE",
+    "id": "snUBlFJYJkoB",
+    "data": {
+      "showExitSigning": true,
+      "hasNotaryPrivileges": false,
+      "showIntro": false,
+      "showSharedLayout": false
+    },
+    "locked": null,
+    "memberships": [],
+    "account": {
+      "defaultVirtualRoomSessionTimeout": 1800000,
+      "owner": "snUBlFJYJkoB",
+      "providers": null,
+      "created": "2023-04-07T08:36:43Z",
+      "language": "en",
+      "id": "So6uzoGg9tUN",
+      "customFields": [
+        {
+          "required": false,
+          "id": "transportmode",
+          "translations": [
+            {
+              "description": "",
+              "language": "zh-CN",
+              "id": "",
+              "data": null,
+              "name": "transport-mode"
+            }
+          ],
+          "data": null,
+          "value": "transport-mode",
+          "name": ""
+        }
+      ],
+      "data": null,
+      "company": {
+        "address": {
+          "state": null,
+          "zipcode": null,
+          "address1": null,
+          "address2": null,
+          "city": null,
+          "country": null
+        },
+        "id": "xaGoDrm6D988",
+        "data": null,
+        "name": "TESTER"
+      },
+      "timezoneId": "Europe/London",
+      "updated": "2023-04-07T08:36:43Z",
+      "logoAltTextKey": "",
+      "licenses": [
+        {
+          "created": "2023-04-07T08:36:43Z",
+          "status": "ACTIVE",
+          "transactions": [],
+          "plan": {
+            "description": "eSign Hundreds of Documents with Unlimited Recipients",
+            "group": "On Premise",
+            "features": null,
+            "original": null,
+            "cycle": "YEAR",
+            "id": "default",
+            "price": {
+              "currency": {
+                "id": "USD",
+                "data": null,
+                "name": "US Dollar"
+              },
+              "amount": 0
+            },
+            "data": null,
+            "quotas": [
+              {
+                "scope": "ACCOUNT",
+                "cycle": null,
+                "limit": 5000,
+                "target": "SENDER"
+              }
+            ],
+            "freeCycles": null,
+            "contract": "YEAR",
+            "name": "Default"
+          },
+          "paidUntil": "2028-04-28T00:00:00Z"
+        }
+      ],
+      "logoUrl": "",
+      "name": "TESTER"
+    },
+    "activated": null,
+    "name": "",
+    "hasDelegates": false
+  },
+  "settings": {
+    "ceremony": {
+      "layout": {
+        "brandingBar": null,
+        "footer": null,
+        "header": {
+          "breadcrumbs": true,
+          "feedback": true,
+          "globalActions": {
+            "confirm": true,
+            "download": true,
+            "saveAsLayout": true,
+            "hideEvidenceSummary": false
+          },
+          "globalNavigation": true,
+          "sessionBar": true,
+          "titleBar": {
+            "title": true,
+            "progressBar": true
+          }
+        },
+        "iframe": false,
+        "navigator": true
+      },
+      "style": null,
+      "declineButton": true,
+      "declineReasons": [],
+      "disableDeclineOther": false,
+      "disableDownloadForUncompletedPackage": false,
+      "disableFirstInPersonAffidavit": false,
+      "disableInPersonAffidavit": false,
+      "disableOptOutOther": false,
+      "disableSecondInPersonAffidavit": false,
+      "documentToolbarOptions": null,
+      "events": {
+        "complete": {
+          "redirect": null,
+          "dialog": true
+        }
+      },
+      "handOver": null,
+      "hideCaptureText": false,
+      "hideLanguageDropdown": false,
+      "hidePackageOwnerInPerson": false,
+      "hideWatermark": false,
+      "inPerson": false,
+      "remoteOnlineNotarization": false,
+      "maxAuthFailsAllowed": 3,
+      "optOutButton": true,
+      "optOutReasons": [],
+      "leftMenuExpand": false,
+      "enforceCaptureSignature": false,
+      "extractAcroFields": false,
+      "extractTextTags": false,
+      "ada": false,
+      "fontSize": 12,
+      "defaultTimeBasedExpiry": false,
+      "remainingDays": 0,
+      "maximumRemainingDays": 0,
+      "maxAttachmentFiles": 0,
+      "showNseHelp": false,
+      "showNseOverview": false,
+      "optionalNavigation": false,
+      "showNseLogoInIframe": false,
+      "geolocation": false,
+      "adHocCobrowsingSigner": false,
+      "timestampOnSignature": false,
+      "signNotaryJournal": false,
+      "vulnerableAdultQuestionnaire": false,
+      "ipen": false
+    },
+    "integrationFrameworkWorkflows": [],
+    "transactionAttributes": null
+  },
+  "signedDocumentDelivery": null,
+  "status": "DRAFT",
+  "type": "TEMPLATE",
+  "updated": "2024-12-09T13:30:07Z",
+  "visibility": "ACCOUNT",
+  "bulkSendable": false,
+  "created": "2024-09-05T07:59:56Z",
+  "originalSentDate": null,
+  "timezoneId": "Europe/London",
+  "conditions": [],
+  "virtualRoom": null,
+  "virtualRoomHostUid": null,
+  "virtualRoomSessionStatus": null,
+  "adHocCobrowsing": null,
+  "hasNotaryJournal": false,
+  "notaryJournalUid": null,
+  "retainUntil": null,
+  "retainFor": null,
+  "signingCompleted": false,
+  "accountUid": "So6uzoGg9tUN",
+  "id": "n6oUvJtQ0uE0z1JSbF_nqiemvC0=",
+  "data": {
+    "senderVisible": false,
+    "origin": "OSS",
+    "signatureLayout": "{\"logo\":{\"image\":\"\"}}"
+  },
+  "trashed": false,
+  "completed": null,
+  "name": "UK Template",
+  "typeAsString": "TEMPLATE"
+}

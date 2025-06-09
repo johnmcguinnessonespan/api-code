@@ -1,0 +1,52 @@
+@from=2024-01-01
+@to=2024-12-12
+@senderId=snUBlFJYJkoB
+@transactionId=
+
+### Retrieves a Usage Report on the current sender.
+get {{hostname}}/api/reports/usage 
+    ?from={{from}}
+    &to={{to}}
+Accept: text/csv
+Authorization: Basic {{api}}
+
+### Retrieves a Completion Report on a sender.
+get {{hostname}}/api/reports/completion
+    ?from={{from}}
+    &to={{to}}
+    &senderId={{senderId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Retrieves a paginated Usage Report for the current account’s senders.
+get {{hostname}}/api/reports/sender-transaction-summary
+    ?from={{from}}
+    &to={{to}}
+    &senderId={{senderId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Retrieves a paginated Usage Report for the current account’s senders.
+get {{hostname}}/api/reports/transaction-summary
+    ?from={{from}}
+    &to={{to}}
+    &senderId={{senderId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Retrieves a Transaction Details report for a specified transactionId.
+get {{hostname}}/api/reports/transaction-detail/{{transactionId}}
+    ?from={{from}}
+    &to={{to}}
+    &senderId={{senderId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Retrieves a delegation report for a sender.
+get {{hostname}}/api/reports/delegation
+    ?from={{from}}
+    &to={{to}}
+    &senderId={{senderId}}
+Accept: application/json
+Authorization: Basic {{api}}
+

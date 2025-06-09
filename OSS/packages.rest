@@ -1,0 +1,101 @@
+@packageId=GnphbSh9OUbFXLb6L8ZwaZ1vpIc=
+@query=inbox
+@type=
+@search=
+@searchType=
+@predefined=
+@visibility=ACCOUNT
+@dateFilterType=
+@startDate=
+@endDate=
+@from=0
+@to=100
+@sort=due
+@dir=asc
+@fields=
+@ownerUserId=
+@ownerEmail=
+
+### Retrieves a list of packages.
+get {{hostname}}/api/packages
+    ?query={{query}}
+    &type={{type}}
+    &search={{search}}
+    &searchType={{searchType}}
+    &predefined={{predefined}}
+    &visibility={{visibility}}
+    &dateFilterType={{dateFilterType}}
+    &startDate={{startDate}}
+    &endDate={{endDate}}
+    &from={{from}}
+    &to={{to}}
+    &sort={{sort}}
+    &dir={{dir}}
+    &fields={{fields}}
+    &ownerUserId={{ownerUserId}}
+    &ownerEmail={{ownerEmail}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Retrieves a specified package.
+get {{hostname}}/api/packages/{{packageId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+
+### Updates a specified package.
+put {{hostname}}/api/packages/{{packageId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### eletes a specified package.
+delete {{hostname}}/api/packages/{{packageId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Retrieves audit details about a package.
+get {{hostname}}/api/packages/{{packageId}}/audit
+Accept: application/json
+Authorization: Basic {{api}}
+
+
+### Downloads the Evidence Summary and all the transaction's signed documents.
+get {{hostname}}/api/packages/{{packageId}}/download
+Accept: application/zip
+Authorization: Basic {{api}}
+
+### Retrieves an evidence summary.
+get {{hostname}}/api/packages/{{packageId}}/evidence/summary
+Accept: application/pdf
+Authorization: Basic {{api}}
+
+### Retrieves a list of fields in a package.
+get {{hostname}}/api/packages/{{packageId}}/fieldSummary
+Accept: application/json
+Authorization: Basic {{api}}
+
+### etrieves a list of fields in a package.
+get {{hostname}}/api/packages/{{packageId}}/readiness
+Accept: application/json
+Authorization: Basic {{api}}
+
+
+### Retrieves a list of conditions for given package.   
+get {{hostname}}/api/packages/{{packageId}}/referencedConditions
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Retrieves all approvals for a signer in a package
+get {{hostname}}/api/packages/{{packageId}}/signers/{signerId}/approvals
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Retrieves the signing status of a package.
+get {{hostname}}/api/packages/{{packageId}}/signingStatus
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Get transaction statuses
+get {{hostname}}/api/packages/overview
+Accept: application/json
+Authorization: Basic {{api}}

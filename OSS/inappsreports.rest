@@ -1,0 +1,43 @@
+@fromDate=2024-01-01
+@toDate=2024-11-11
+@reportType=TRANSACTION
+@fileName=Transaction_Report_2024-04.csv
+@packageId =-BgpW7uStfjt78XWk3D55y6ffC4=
+
+### Retrieves reports for the specified fromDate,toDate and reportType for all accounts.
+get {{hostname}}/api/inappreports/reports
+    ?fromDate={{fromDate}}
+    &toDate={{toDate}}
+    &reportType={{reportType}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### fails
+delete {{hostname}}/api/inappreports/reports
+    ?fileName={{fileName}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### fails 
+get {{hostname}}/api/inappreports/reports/summaries
+    ?fromDate={{fromDate}}
+    &toDate={{toDate}}
+    &reportType={{reportType}}
+Accept: application/
+Authorization: Basic {{api}}
+
+### Retrieves the specified report file (csv).
+get {{hostname}}/api/inappreports/reports/{{fileName}}
+Accept: application/pdf
+Authorization: Basic {{api}}
+
+### Deletes the specified report file (csv).
+delete {{hostname}}/api/inappreports/reports/{{fileName}}
+Accept: application/pdf
+Authorization: Basic {{api}}
+
+###
+get {{hostname}}/api/inappreports/reports/zip/reports
+Accept: application/zip
+Authorization: Basic {{api}}
+

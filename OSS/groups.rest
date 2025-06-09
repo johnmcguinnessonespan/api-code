@@ -1,0 +1,517 @@
+@groupId=
+
+### Retrieves a list of all Groups in an account
+get {{hostname}}/api/groups
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Creates a new Group using the specified parameters
+post {{hostname}}/api/groups
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "name": "string",
+  "members": [
+    {
+      "userId": "string",
+      "firstName": "string",
+      "lastName": "string",
+      "email": "string",
+      "memberType": "REGULAR",
+      "pending": true
+    }
+  ],
+  "account": {
+    "name": "string",
+    "owner": "OhONEdotwte12",
+    "id": "AhONEdspank23",
+    "data": {
+      "additionalProp1": {},
+      "additionalProp2": {},
+      "additionalProp3": {}
+    },
+    "customFields": [
+      {
+        "value": "string",
+        "name": "string",
+        "id": "string",
+        "required": true,
+        "data": {
+          "additionalProp1": {},
+          "additionalProp2": {},
+          "additionalProp3": {}
+        },
+        "translations": [
+          {
+            "data": {
+              "additionalProp1": {},
+              "additionalProp2": {},
+              "additionalProp3": {}
+            },
+            "description": "string",
+            "id": "string",
+            "language": "string",
+            "name": "string"
+          }
+        ]
+      }
+    ],
+    "providers": {
+      "documents": [
+        {
+          "name": "string",
+          "id": "string",
+          "data": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "provides": "string"
+        }
+      ],
+      "users": [
+        {
+          "name": "string",
+          "id": "string",
+          "data": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "provides": "string"
+        }
+      ]
+    },
+    "timezoneId": "America/Toronto",
+    "licenses": [
+      {
+        "status": "ACTIVE",
+        "transactions": [
+          {
+            "created": "2024-12-09T18:27:49.781Z",
+            "price": {
+              "currency": {
+                "name": "string",
+                "id": "string",
+                "data": {
+                  "additionalProp1": {},
+                  "additionalProp2": {},
+                  "additionalProp3": {}
+                }
+              },
+              "amount": 0
+            },
+            "creditCard": {
+              "name": "string",
+              "type": "string",
+              "number": "string",
+              "expiration": {
+                "year": 0,
+                "month": 0
+              },
+              "cvv": "string"
+            }
+          }
+        ],
+        "paidUntil": "2024-12-09T18:27:49.781Z",
+        "plan": {
+          "name": "string",
+          "cycle": "DAY",
+          "description": "string",
+          "features": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "id": "string",
+          "data": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "group": "string",
+          "price": {
+            "currency": {
+              "name": "string",
+              "id": "string",
+              "data": {
+                "additionalProp1": {},
+                "additionalProp2": {},
+                "additionalProp3": {}
+              }
+            },
+            "amount": 0
+          },
+          "contract": "DAY",
+          "freeCycles": {
+            "cycle": "DAY",
+            "count": 0
+          },
+          "quotas": [
+            {
+              "target": "SIGNER",
+              "cycle": "DAY",
+              "scope": "SENDER",
+              "limit": 0
+            }
+          ],
+          "original": "string"
+        }
+      }
+    ],
+    "company": {
+      "address": {
+        "state": "string",
+        "country": "string",
+        "city": "string",
+        "address1": "string",
+        "address2": "string",
+        "zipcode": "string"
+      },
+      "name": "string",
+      "id": "string",
+      "data": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      }
+    },
+    "logoUrl": "string",
+    "logoAltTextKey": "string"
+  },
+  "id": "string",
+  "data": {
+    "additionalProp1": {},
+    "additionalProp2": {},
+    "additionalProp3": {}
+  },
+  "email": "string",
+  "emailMembers": true,
+  "reciprocalDelegation": true
+}
+
+### Retrieves summaries for all groups in the current account
+get {{hostname}}/api/groups/summary
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Retrieves a group
+get {{hostname}}/api/groups/{{groupId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+## Updates an existing Group
+put {{hostname}}/api/groups/{{groupId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "name": "string",
+  "members": [
+    {
+      "userId": "string",
+      "firstName": "string",
+      "lastName": "string",
+      "email": "string",
+      "memberType": "REGULAR",
+      "pending": true
+    }
+  ],
+  "account": {
+    "name": "string",
+    "created": "2024-12-09T18:32:51.533Z",
+    "owner": "OhONEdotwte12",
+    "id": "AhONEdspank23",
+    "data": {
+      "additionalProp1": {},
+      "additionalProp2": {},
+      "additionalProp3": {}
+    },
+    "customFields": [
+      {
+        "value": "string",
+        "name": "string",
+        "id": "string",
+        "required": true,
+        "data": {
+          "additionalProp1": {},
+          "additionalProp2": {},
+          "additionalProp3": {}
+        },
+        "translations": [
+          {
+            "data": {
+              "additionalProp1": {},
+              "additionalProp2": {},
+              "additionalProp3": {}
+            },
+            "description": "string",
+            "id": "string",
+            "language": "string",
+            "name": "string"
+          }
+        ]
+      }
+    ],
+    "providers": {
+      "documents": [
+        {
+          "name": "string",
+          "id": "string",
+          "data": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "provides": "string"
+        }
+      ],
+      "users": [
+        {
+          "name": "string",
+          "id": "string",
+          "data": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "provides": "string"
+        }
+      ]
+    },
+    "timezoneId": "America/Toronto",
+    "licenses": [
+      {
+        "status": "ACTIVE",
+        "created": "2024-12-09T18:32:51.534Z",
+        "transactions": [
+          {
+            "created": "2024-12-09T18:32:51.534Z",
+            "price": {
+              "currency": {
+                "name": "string",
+                "id": "string",
+                "data": {
+                  "additionalProp1": {},
+                  "additionalProp2": {},
+                  "additionalProp3": {}
+                }
+              },
+              "amount": 0
+            },
+            "creditCard": {
+              "name": "string",
+              "type": "string",
+              "number": "string",
+              "expiration": {
+                "year": 0,
+                "month": 0
+              },
+              "cvv": "string"
+            }
+          }
+        ],
+        "paidUntil": "2024-12-09T18:32:51.534Z",
+        "plan": {
+          "name": "string",
+          "cycle": "DAY",
+          "description": "string",
+          "features": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "id": "string",
+          "data": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "group": "string",
+          "price": {
+            "currency": {
+              "name": "string",
+              "id": "string",
+              "data": {
+                "additionalProp1": {},
+                "additionalProp2": {},
+                "additionalProp3": {}
+              }
+            },
+            "amount": 0
+          },
+          "contract": "DAY",
+          "freeCycles": {
+            "cycle": "DAY",
+            "count": 0
+          },
+          "quotas": [
+            {
+              "target": "SIGNER",
+              "cycle": "DAY",
+              "scope": "SENDER",
+              "limit": 0
+            }
+          ],
+          "original": "string"
+        }
+      }
+    ],
+    "company": {
+      "address": {
+        "state": "string",
+        "country": "string",
+        "city": "string",
+        "address1": "string",
+        "address2": "string",
+        "zipcode": "string"
+      },
+      "name": "string",
+      "id": "string",
+      "data": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      }
+    },
+    "updated": "2024-12-09T18:32:51.534Z",
+    "logoUrl": "string",
+    "logoAltTextKey": "string"
+  },
+  "created": "2024-12-09T18:32:51.534Z",
+  "id": "string",
+  "data": {
+    "additionalProp1": {},
+    "additionalProp2": {},
+    "additionalProp3": {}
+  },
+  "updated": "2024-12-09T18:32:51.534Z",
+  "email": "string",
+  "emailMembers": true,
+  "reciprocalDelegation": true
+}
+
+### Delete an existing Group
+delete {{hostname}}/api/groups/{{groupId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Invites an existing sender to join the Group
+poet {{hostname}}/api/groups/{{groupId}}/invites
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "address": {
+    "state": "string",
+    "country": "string",
+    "city": "string",
+    "address1": "string",
+    "address2": "string",
+    "zipcode": "string"
+  },
+  "language": "string",
+  "name": "string",
+  "signature": {
+    "handdrawn": "string",
+    "textual": {
+      "color": "string",
+      "font": "string"
+    }
+  },
+  "created": "2024-12-09T18:35:37.239Z",
+  "id": "string",
+  "data": {
+    "additionalProp1": {},
+    "additionalProp2": {},
+    "additionalProp3": {}
+  },
+  "title": "string",
+  "userCustomFields": [
+    {
+      "value": "string",
+      "name": "string",
+      "id": "string",
+      "data": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      },
+      "translations": [
+        {
+          "data": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "description": "string",
+          "id": "string",
+          "language": "string",
+          "name": "string"
+        }
+      ]
+    }
+  ],
+  "timezoneId": "string",
+  "external": {
+    "id": "string",
+    "provider": "string",
+    "providerName": "string",
+    "data": {
+      "additionalProp1": {},
+      "additionalProp2": {},
+      "additionalProp3": {}
+    }
+  },
+  "professionalIdentityFields": [
+    {
+      "value": "string",
+      "name": "string",
+      "type": "string",
+      "id": "string",
+      "data": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      },
+      "category": "string",
+      "translations": [
+        {
+          "data": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "description": "string",
+          "id": "string",
+          "language": "string",
+          "name": "string"
+        }
+      ]
+    }
+  ],
+  "company": "string",
+  "updated": "2024-12-09T18:35:37.239Z",
+  "phone": "string",
+  "specialTypes": [
+    "NOTARY"
+  ],
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string"
+}
+
+### Invites a new sender to join the Group
+poet {{hostname}}/api/groups/{{groupId}}/members
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "userId": "string",
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "memberType": "REGULAR",
+  "pending": true
+}

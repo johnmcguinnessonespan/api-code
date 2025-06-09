@@ -1,0 +1,298 @@
+@packageId = -BgpW7uStfjt78XWk3D55y6ffC4=
+
+###
+get {{hostname}}/api/account/usage
+Accept: application/json
+Authorization: Basic {{api}}
+
+###
+get {{hostname}}/api/account/senders/Z9ssGrVjr34X/apiKey
+Accept: application/json
+Authorization: Basic {{api}}
+
+
+###
+get {{hostname}}/api/packages/{{packageId}}/documents/zip
+Accept: application/zip
+Authorization: Basic {{api}}
+
+###
+get {{hostname}}/api/packages/grqN2zNR5gLUxcO5GRAqXYj8YMw=
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "autocomplete": true,
+  "consent": null,
+  "description": "",
+  "documents": [
+    {
+      "status": "",
+      "externalSigned": false,
+      "base64Content": null,
+      "index": 1,
+      "fields": [],
+      "description": "",
+      "id": "fd66bdde1896d4cef86446ae3c595be3613a6cf19818e57b",
+      "data": {
+        "ese_document_texttag_autofielddateformat": "MMMM dd, yyyy",
+        "ese_document_texttag_json_0": "[{\"height\":10.3554,\"left\":96.3371,\"name\":\"{{*esl:SignerVaisala1:Signature:size(200,70)}}\",\"page\":1,\"pageHeight\":792,\"pageWidth\":612,\"top\":257.686,\"width\":3.68736},{\"height\":10.3554,\"left\":98.1661,\"name\":\"{{*esl:SignerVaisala2:Signature:size(200,70)}}\",\"page\":1,\"pageHeight\":792,\"pageWidth\":612,\"top\":332.679,\"width\":3.68736}]",
+        "ese_document_texttag_extract_needed": "true",
+        "ese_document_texttag_handled_roles": "[]"
+      },
+      "signerVerificationToken": null,
+      "extract": true,
+      "pages": [
+        {
+          "index": 0,
+          "version": 0,
+          "id": "",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 796.0,
+          "height": 1030.0
+        },
+        {
+          "index": 1,
+          "version": 0,
+          "id": "",
+          "left": 0.0,
+          "top": 0.0,
+          "width": 796.0,
+          "height": 1030.0
+        }
+      ],
+      "signedHash": null,
+      "imprintFields": [],
+      "external": null,
+      "approvals": [
+        {
+          "acceptedPackageTimezone": "",
+          "fromFile": false,
+          "fromFileData": null,
+          "fields": [
+            {
+              "horizontalTextAlignment": null,
+              "tooltip": "",
+              "notary": false,
+              "type": "INPUT",
+              "binding": null,
+              "left": 406.0,
+              "id": "pCeqcqIiuyUO",
+              "validation": {
+                "pattern": "",
+                "group": "",
+                "required": false,
+                "minLength": null,
+                "maxLength": null,
+                "errorCode": null,
+                "disabled": false,
+                "errorMessage": "",
+                "enum": null,
+                "groupTooltip": "",
+                "minimumRequired": null,
+                "maximumRequired": null
+              },
+              "page": 0,
+              "data": null,
+              "fontSize": 0,
+              "subtype": "CHECKBOX",
+              "extractAnchor": null,
+              "extract": false,
+              "width": 10.0,
+              "top": 255.0,
+              "height": 10.0,
+              "formattedValue": "",
+              "value": null,
+              "name": ""
+            },
+            {
+              "horizontalTextAlignment": "center",
+              "tooltip": "",
+              "notary": false,
+              "type": "SIGNATURE",
+              "binding": null,
+              "left": 343.0,
+              "id": "eu8ADmt8dt01",
+              "validation": null,
+              "page": 0,
+              "data": null,
+              "fontSize": 0,
+              "subtype": "CAPTURE",
+              "extractAnchor": null,
+              "extract": false,
+              "width": 135.0,
+              "top": 215.0,
+              "height": 30.0,
+              "formattedValue": "",
+              "value": "",
+              "name": ""
+            }
+          ],
+          "optional": false,
+          "id": "sbND5lvbGaIN",
+          "data": null,
+          "disabled": false,
+          "role": "a5c3e307-dbac-4200-9ffe-718ec742ef41",
+          "accepted": null,
+          "enforceCaptureSignature": false,
+          "signed": null,
+          "name": ""
+        }
+      ],
+      "extractionTypes": [
+        "TEXT_TAGS",
+        "ACROFIELDS"
+      ],
+      "tagged": false,
+      "name": "OneSpan Testing - 2021-03-30 09_59_54",
+      "size": 116658
+    }
+  ],
+  "due": null,
+  "emailMessage": "Admist the mists",
+  "language": "en",
+  "limits": null,
+  "messages": [],
+  "notarized": false,
+  "notaryRoleId": null,
+  "roles": [
+    {
+      "index": 0,
+      "type": "SIGNER",
+      "id": "a5c3e307-dbac-4200-9ffe-718ec742ef41",
+      "data": null,
+      "attachmentRequirements": [],
+      "deliverDocumentsByEmail": false,
+      "locked": false,
+      "emailMessage": {
+        "content": ""
+      },
+      "reassign": false,
+      "downloadEvidenceSummaryBySigner": false,
+      "specialTypes": [],
+      "signers": [],
+      "name": "Signer1"
+    }
+  ],
+  "settings": {
+    "ceremony": {
+      "layout": {
+        "brandingBar": {
+          "logo": {
+            "link": "",
+            "src": "branding",
+            "logoAltTextKey": "esl.alt.text.logo"
+          }
+        },
+        "footer": null,
+        "header": {
+          "breadcrumbs": true,
+          "feedback": true,
+          "globalActions": {
+            "download": true,
+            "hideEvidenceSummary": false,
+            "saveAsLayout": true,
+            "confirm": true
+          },
+          "globalNavigation": true,
+          "sessionBar": true,
+          "titleBar": null
+        },
+        "iframe": false,
+        "navigator": true
+      },
+      "style": null,
+      "declineButton": true,
+      "declineReasons": [
+        "\"wil ik niet\"",
+        "\"kan ik niet\"",
+        "\"zal ik niet\""
+      ],
+      "disableDeclineOther": true,
+      "disableDownloadForUncompletedPackage": false,
+      "disableFirstInPersonAffidavit": false,
+      "disableInPersonAffidavit": false,
+      "disableOptOutOther": false,
+      "disableSecondInPersonAffidavit": false,
+      "documentToolbarOptions": null,
+      "events": {
+        "complete": {
+          "redirect": "url",
+          "dialog": true
+        }
+      },
+      "handOver": {
+        "href": "https://www.dhl.co.jp/ja/express",
+        "text": "Exit/Εξοδος",
+        "title": "",
+        "autoRedirect": false,
+        "parameters": [
+          "SIGNER",
+          "STATUS",
+          "PACKAGE"
+        ]
+      },
+      "hideCaptureText": true,
+      "hideLanguageDropdown": false,
+      "hidePackageOwnerInPerson": false,
+      "hideWatermark": true,
+      "inPerson": false,
+      "remoteOnlineNotarization": false,
+      "maxAuthFailsAllowed": 3,
+      "optOutButton": false,
+      "optOutReasons": [],
+      "leftMenuExpand": false,
+      "enforceCaptureSignature": false,
+      "extractAcroFields": true,
+      "extractTextTags": true,
+      "ada": false,
+      "fontSize": 14,
+      "defaultTimeBasedExpiry": true,
+      "remainingDays": 7,
+      "maximumRemainingDays": 0,
+      "maxAttachmentFiles": 0,
+      "showNseHelp": false,
+      "showNseOverview": false,
+      "optionalNavigation": false,
+      "showNseLogoInIframe": false,
+      "geolocation": false,
+      "adHocCobrowsingSigner": false,
+      "timestampOnSignature": false,
+      "signNotaryJournal": false,
+      "vulnerableAdultQuestionnaire": false,
+      "ipen": false
+    },
+    "integrationFrameworkWorkflows": [],
+    "transactionAttributes": null
+  },
+  "signedDocumentDelivery": null,
+  "status": "DRAFT",
+  "type": "TEMPLATE",
+  "updated": "2023-11-28T10:35:45Z",
+  "visibility": "ACCOUNT",
+  "bulkSendable": true,
+  "created": "2021-02-01T14:46:00Z",
+  "originalSentDate": null,
+  "timezoneId": "Australia/Lord_Howe",
+  "conditions": [],
+  "virtualRoom": null,
+  "virtualRoomHostUid": null,
+  "virtualRoomSessionStatus": null,
+  "adHocCobrowsing": null,
+  "hasNotaryJournal": false,
+  "notaryJournalUid": null,
+  "retainUntil": null,
+  "retainFor": null,
+  "signingCompleted": false,
+  "accountUid": "hT8bAKuzdLAE",
+  "id": "GnphbSh9OUbFXLb6L8ZwaZ1vpIc=",
+  "data": {
+    "senderVisible": false,
+    "origin": "OSS"
+  },
+  "trashed": false,
+  "completed": null,
+  "name": "A one template",
+  "typeAsString": "TEMPLATE"
+}

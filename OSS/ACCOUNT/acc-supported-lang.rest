@@ -1,0 +1,23 @@
+### Retrieves the list of supported languages that you can set for your signers.
+get {{hostname}}/api/account/admin/accountSettings/limitSupportedLanguages
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Updates your supported signing languages.
+patch {{hostname}}/api/account/admin/accountSettings/limitSupportedLanguages
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "defaultSignerLanguage": "en",
+  "signerLanguages": [
+    "fr",
+    "en"
+  ]
+}
+
+### Deletes your personally configured supported signing language settings.
+delete {{hostname}}/api/account/admin/accountSettings/limitSupportedLanguages
+Accept: application/json
+Authorization: Basic {{api}}
+

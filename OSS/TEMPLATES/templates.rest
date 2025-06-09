@@ -1,0 +1,13 @@
+@templateId=SNRnFeOzvHFQ9cNHN8J50Kwbt3c=
+
+### Creates multiple packages.
+post {{hostname}}/api/packages/{{templateId}}/bulk_send
+Accept: text/html
+Authorization: Basic {{api}}
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="135-signers.csv"
+
+< ./135-signers.csv
+------WebKitFormBoundary7MA4YWxkTrZu0gW--

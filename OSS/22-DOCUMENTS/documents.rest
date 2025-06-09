@@ -1,0 +1,40 @@
+@packageId=grqN2zNR5gLUxcO5GRAqXYj8YMw=
+
+### Adds a new document to an existing package
+post {{hostname}}/api/packages/{{packageId}}/documents
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "name": "NDA Document"
+}
+
+### Adds a new document to an existing package
+put {{hostname}}/api/packages/{{packageId}}/documents
+Accept: application/json
+Authorization: Basic {{api}}
+
+[
+  {
+    "id": "default-consent",
+    "index": 0
+  },
+  {
+    "id": "ae4899fd2f2cff1eca219508e2402abd2b0c79c4bde0a155",
+    "index": 1
+  },
+  {
+    "id": "da7016d875cb609d1048d427391369e68bb55dcecedfa8ca",
+    "index": 2
+  }
+]
+
+### Deletes multiple documents from a package
+delete {{hostname}}/api/packages/{{packageId}}/documents
+Accept: application/json
+Authorization: Basic {{api}}
+
+[
+  "01e3e197f2d54b2797cc40787976e1b135353b920c0b76c5",
+  "8407dc403dabb4e120a95ddfb385930a57c2586490781c26"
+]

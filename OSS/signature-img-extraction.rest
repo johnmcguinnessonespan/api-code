@@ -1,0 +1,7 @@
+@packageId=Zu8tF7DjkW7CMYi5vbbpDL8FcZo=
+@roleId=0cb00aa3-aedf-4846-b659-d216f542aa26
+
+### Extracts a Signer’s Captured Signature from a Package
+get {{hostname}}/api/packages/{{packageId}}/roles/{{roleId}}/signatureImage
+Accept: image/png
+Authorization: Basic {{api}}

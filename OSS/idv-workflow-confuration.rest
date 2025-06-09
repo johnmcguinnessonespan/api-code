@@ -1,0 +1,39 @@
+### Retrieves the IDV Authentication Workflow
+get {{idvHostname}}/api/accountConfig/idvWorkflowConfig
+Accept: application/json
+Authorization: Bearer {{token}}
+ 
+### Creates a new IDV Authentication workflow configuration
+post {{idvHostname}}/api/accountConfig/idvWorkflowConfig
+Accept: application/json
+Authorization: Bearer {{token}}
+
+[
+  {
+    "id": "string",
+    "type": "string",
+    "tenant": "string",
+    "desc": "string",
+    "skipWhenAccessingSignedDocuments": true
+  }
+]
+
+### Updates the IDV workflow configuration
+put {{idvHostname}}/api/accountConfig/idvWorkflowConfig
+Accept: application/json
+Authorization: Bearer {{token}}
+
+[
+  {
+    "id": "string",
+    "type": "string",
+    "tenant": "string",
+    "desc": "string",
+    "skipWhenAccessingSignedDocuments": true
+  }
+]
+
+### Deletes the IDV workflow configuration
+delete {{idvHostname}}/api/accountConfig/idvWorkflowConfig
+Accept: application/json
+Authorization: Bearer {{token}}

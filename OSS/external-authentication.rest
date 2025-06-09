@@ -1,0 +1,4 @@
+### Retrieves information on external authentication types and type categories for the current system account
+get {{hostname}}/api/external-authentication-options
+Accept: application/json
+Authorization: Basic {{api}}

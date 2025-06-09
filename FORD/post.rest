@@ -1,0 +1,12 @@
+@transactionId=
+
+### Create Session Creation Token for existing transaction Copy
+post {{idvHostname}}/api/transaction/{{transactionId}}/token
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    
+}
+
+

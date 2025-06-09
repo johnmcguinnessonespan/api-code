@@ -1,0 +1,41 @@
+@senderId=G2QgwPvP54E5
+@delegateId=
+
+### Adds delegates to a Sender.
+post {{hostname}}/api/account/senders/{{senderId}}/delegates/{{delegatesId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Deletes a delegate from a specified Sender.
+delete {{hostname}}/api/account/senders/{{senderId}}/delegates/{{delegatesId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Retrieves a list of users who have been designated as delegates for a specified user.
+get {{hostname}}/api/account/senders/{{senderId}}/delegates
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Adds delegates to a specified user.
+put {{hostname}}/api/account/senders/{{senderId}}/delegates
+Accept: application/json
+Authorization: Basic {{api}}
+
+[
+  {
+    "id": "cb895JN2g3k3",
+    "startDate": "2024-01-01",
+    "expiryDate": "2024-01-01",
+    "sendEmailCopies": true,
+    "data": {
+      "additionalProp1": {},
+      "additionalProp2": {},
+      "additionalProp3": {}
+    }
+  }
+]
+
+### Deletes all delegates from a Sender.
+delete {{hostname}}/api/account/senders/{{senderId}}/delegates
+Accept: application/json
+Authorization: Basic {{api}}

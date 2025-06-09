@@ -1,0 +1,47 @@
+### Retrieves a list of all your current Backoffice Account settings.
+get {{hostname}}/api/account/admin/accountSettings
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Upates a list of all your current Backoffice Account settings.
+patch {{hostname}}/api/account/admin/accountSettings
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "disableDownloadForUncompletedPackage": false,
+  "disableFirstInPersonAffidavit": false,
+  "disableSecondInPersonAffidavit": false,
+  "disableInPersonAffidavit": false,
+  "hideCaptureText": false,
+  "hideLanguageDropdown": false,
+  "hidePackageOwnerInPerson": false,
+  "hideWatermark": false,
+  "declineButton": true,
+  "disableDeclineOther": false,
+  "inPerson": false,
+  "enforceCaptureSignature": false,
+  "extractAcroFields": false,
+  "extractTextTags": false,
+  "ada": false,
+  "defaultTimeBasedExpiry": false,
+  "leftMenuExpand": false,
+  "showNseHelp": false,
+  "showNseOverview": false,
+  "showNseLogoInIframe": false,
+  "optionalNavigation": false,
+  "globalActionsDownload": true,
+  "globalActionsHideEvidenceSummary": false,
+  "geolocation": false,
+  "timestampOnSignature": false,
+  "title": true,
+  "progressBar": true,
+  "navigator": true,
+  "maxAttachmentFiles": 0,
+  "fontSize": 12
+}
+
+### Deletes a list of all your current Backoffice Account settings.
+delete {{hostname}}/api/account/admin/accountSettings
+Accept: application/json
+Authorization: Basic {{api}}

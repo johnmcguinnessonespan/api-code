@@ -1,0 +1,113 @@
+@packageId=
+@documentId=
+@layoutId=
+@layoutName=
+
+
+### Retrieves the original PDF document
+get {{hostname}}/api/packages/{{packageId}}/documents/{{documentId}}/original
+Accept: application/json
+Authorization: Basic {{api}}
+
+
+### Retrieves a specific document in PDF form
+get {{hostname}}/api/packages/{{packageId}}/documents/{{documentId}}/pdf
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Applies a layout to a document
+post {{hostname}}/api/packages/{{packageId}}/documents/{{documentId}}/layout
+    ?layoutId={{layoutId}}
+    &layoutName={{layoutName}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Replaces approvals and imprint fields with those provided in the request
+put {{hostname}}/api/packages/{{packageId}}/documents/{{documentId}}/fields
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "approvals": [
+    {
+      "fields": [
+        {
+          "value": "string",
+          "name": "string",
+          "type": "SIGNATURE",
+          "validation": {
+            "maxLength": 0,
+            "pattern": "string",
+            "required": true,
+            "errorMessage": "string",
+            "errorCode": 0,
+            "enum": [
+              "string"
+            ],
+            "minLength": 0,
+            "group": "string",
+            "minimumRequired": 0
+          },
+          "binding": "string",
+          "id": "string",
+          "data": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "page": 0,
+          "left": 0,
+          "extractAnchor": {
+            "topOffset": 100,
+            "characterIndex": 3,
+            "anchorPoint": "TOPLEFT",
+            "index": 2,
+            "text": "Signature:",
+            "width": 200,
+            "height": 50,
+            "leftOffset": 20
+          },
+          "extract": true,
+          "subtype": "FULLNAME",
+          "width": 0,
+          "top": 0,
+          "height": 0,
+          "textAlignment": "string"
+        }
+      ],
+      "name": "string",
+      "id": "string",
+      "data": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      },
+      "role": "string",
+      "optional": true,
+      "enforceCaptureSignature": true,
+      "accepted": "2024-12-07T16:01:50.314Z",
+      "signed": "2024-12-07T16:01:50.314Z"
+    }
+  ],
+  "imprintFields": [
+    {
+      "value": "string",
+      "name": "string",
+      "type": "INPUT",
+      "id": "string",
+      "data": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      },
+      "page": 0,
+      "left": 0,
+      "subtype": "LABEL",
+      "width": 0,
+      "top": 0,
+      "height": 0,
+      "binding": "string",
+      "editable": true
+    }
+  ]
+}

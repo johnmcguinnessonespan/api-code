@@ -1,0 +1,77 @@
+@packageId=WIj_1MAfrIw-ON7LMGEe9C0FC6A=
+@roleId=a592b55d-4b1f-4756-8417-a3be8372b088
+
+### Retrieves all roles for the package.
+get {{hostname}}/packages/{{packageId}}/roles
+Accept: application/json
+Authorization: Basic {{api}}
+
+###
+post {{hostname}}/packages/{{packageId}}/roles
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+
+}
+ 
+### Reorders the roles in a package.
+put {{hostname}}/packages/{{packageId}}/roles
+Accept: application/json
+Authorization: Basic {{api}}
+
+[{
+  "id": "9ad0a8ae-b1e2-418d-970b-2a33c964d175",
+  "index": 0
+},
+{
+  "id": "a592b55d-4b1f-4756-8417-a3be8372b088",
+  "index": 1
+}]
+
+### Retrieves a single role.
+get {{hostname}}/packages/{{packageId}}/roles/{{roleId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Updates the roles in a package.
+put {{hostname}}/packages/{{packageId}}/roles/{{roleId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+    
+}
+
+### Deletes a role.
+delete {{hostname}}/packages/{{packageId}}/roles/{{roleId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Unlocks a role.
+post {{hostname}}/packages/{{packageId}}/roles/{{roleId}}/unlock
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Adds a new ad hoc group to a transaction
+post {{hostname}}/packages/{{packageId}}/groups
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+
+}
+
+### Updates a transaction's existing ad hoc group.
+put {{hostname}}/packages/{{packageId}}/groups/{{roleId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+
+}
+
+### Deletes a specified ad hoc group.
+delates {{hostname}}/packages/{{packageId}}/groups/{{roleId}}
+Accept: application/json
+Authorization: Basic {{api}}

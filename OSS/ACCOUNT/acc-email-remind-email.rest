@@ -1,0 +1,20 @@
+### Retrieves your current Email Reminder settings
+get {{hostname}}/api/account/admin/accountSettings/emailReminderSettings
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Updates your account email reminder settings. vague call
+put {{hostname}}/api/account/admin/accountSettings/emailReminderSettings
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "startInDaysDelay": 1,
+  "intervalInDays": 1,
+  "repetitionsCount": 1
+}
+ 
+### Deletes any customized Account Email Reminder settings
+delete {{hostname}}/api/account/admin/accountSettings/emailReminderSettings
+Accept: application/json
+Authorization: Basic {{api}}

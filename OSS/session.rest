@@ -1,0 +1,4 @@
+### Retrieves the session object
+get {{hostname}}/api/session
+Accept: application/json
+Authorization: Basic {{api}}

@@ -1,0 +1,4 @@
+### Retrieves a list of blacklisted attachment types
+get {{hostname}}/api/account/admin/accountSettings/attachmentsBlacklist
+Accept: application/json
+Authorization: Basic {{api}}

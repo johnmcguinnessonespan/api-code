@@ -1,0 +1,21 @@
+@transactionId=6e489fd7-d20f-40c5-abfc-a47757c4c357 // uat
+
+//@transactionId=79be6d23-8a8e-4cf6-957e-563f7b0e54a6  // prod
+
+###
+get {{idvHostname}}/api/secure/transaction/{{transactionId}}/verification
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+###
+get {{idvHostname}}/transaction/{{transactionId}}/document/{{documentId}}/pdf
+Content-Type: application/pdf
+Authorization: Bearer {{token}}
+
+
+###
+get {{idvHostname}}/api/secure/transaction/{{transactionId}}/document/AuditTrailDocument/pdf
+Content-Type: application/pdf
+Authorization: Bearer {{token}}
+

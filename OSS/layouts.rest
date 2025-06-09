@@ -1,0 +1,21 @@
+### Retrieves a list of available layouts.
+get {{hostname}}/api/layouts
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Creates a new layout.
+post {{hostname}}/api/layouts
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "name": "YourLayout",
+  "id": "asd0sdf08gdfg3njkfg0345dg=",
+  "description": "string",
+  "type": "LAYOUT",
+  "visibility": "ACCOUNT",
+  "documents": [
+    {
+      "id": "b5d4e318c6f728f3b9d7e13393bb0f9a368de55744010385"
+    }
+  ]

@@ -1,0 +1,38 @@
+@packageId=H2-npi1cdqbTNYGEgFCThwx0Rw8=
+@roleId=f491307c-00b6-49f2-a15f-7cd100a2c1ac
+@accountId=hT8bAKuzdLAE
+
+### Retrieves information on the type of verification being used.
+get {{hostname}}/api/packages/{{packageId}}/roles/{{roleId}}/verification
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Updates an advanced verification method.
+put {{hostname}}/api/packages/{{packageId}}/roles/{{roleId}}/verification 
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "typeId": "personalCertificateSigning",
+  "payload": ""
+}
+
+### Creates an advanced form of verification.
+post {{hostname}}/api/packages/{{packageId}}/roles/{{roleId}}/verification 
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "typeId": "personalCertificateSigning",
+  "payload": "string"
+}
+
+### Deletes an advanced verification method, for a specified role
+delete {{hostname}}/api/packages/{{packageId}}/roles/{{roleId}}/verification 
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Retrieves advanced verification types.
+get {{hostname}}/api/account/{{accountId}}/verificationTypes
+Accept: application/json
+Authorization: Basic {{api}}

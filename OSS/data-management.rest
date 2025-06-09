@@ -1,0 +1,37 @@
+### Retrieves the data management policy for the account.
+get {{hostname}}/api/dataRetentionSettings/dataManagementPolicy
+Accept: application/json
+Authorization: Basic {{api}}
+ 
+### Updates data management policy for the account.
+put {{hostname}}/api/dataRetentionSettings/dataManagementPolicy
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "transactionRetention": {
+    "draft": 90,
+    "sent": 90,
+    "completed": 90,
+    "archived": 90,
+    "declined": 90,
+    "optedOut": 90,
+    "expired": 90
+  }
+}
+
+### Retrieves the expiry configurations defined for the account.
+get {{hostname}}/api/dataRetentionSettings/expiryTimeConfiguration
+Accept: application/json
+Authorization: Basic {{api}}
+
+
+### Updates the expiry configurations defined for the account.
+post {{hostname}}/api/dataRetentionSettings/expiryTimeConfiguration
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "remainingDays": 60,
+  "maximumRemainingDays": 90
+}

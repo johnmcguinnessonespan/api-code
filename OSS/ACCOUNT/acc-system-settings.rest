@@ -1,0 +1,21 @@
+### Retrieves your current system settings
+get {{hostname}}/api/account/admin/accountSettings/systemSettings
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Updates your current system settings
+patch {{hostname}}/api/account/admin/accountSettings/systemSettings
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "senderLoginMaxFailedAttempts": 10,
+  "loginSessionTimeout": 36000000,
+  "sessionTimeoutWarning": 36000000,
+  "orderLastNameFirstName": true
+}
+
+### Deletes your current system settings
+delete {{hostname}}/api/account/admin/accountSettings/systemSettings
+Accept: application/json
+Authorization: Basic {{api}}

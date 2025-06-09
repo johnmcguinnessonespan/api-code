@@ -1,0 +1,20 @@
+### Retrieves an account's Signing Ceremony logos.
+get {{hostname}}/api/account/admin/signingLogos
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Add, update or delete Signing Ceremony logos for an account.
+post {{hostname}}/api/account/admin/signingLogos
+Accept: application/json
+Authorization: Basic {{api}}
+
+[
+  {
+    "language": "it",
+    "image": "data:image/png;base64,iVBORw......................aE8UuUAAAAAElFTkSuQmCC"
+  },
+  {
+    "language": "pt",
+    "image": "data:image/png;base64,iVBORw0...........AAAAAElFTkSuQmCC"
+  }
+]

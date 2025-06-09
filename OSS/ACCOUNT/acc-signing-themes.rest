@@ -1,0 +1,23 @@
+### Retrieves a customized signing theme.
+get {{hostname}}/api/account/signingThemes
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Create a customized signing theme.
+post {{hostname}}/api/account/signingThemes
+Accept: application/json
+Authorization: Basic {{api}}
+
+
+
+### CUpdate an existing customized signing theme.
+put {{hostname}}/api/account/signingThemes
+Accept: application/json
+Authorization: Basic {{api}}
+
+
+
+### Delete a customized signing themes.
+delete{{hostname}}/api/account/signingThemes
+Accept: application/json
+Authorization: Basic {{api}}

@@ -1,0 +1,4 @@
+### Retrieves the Integration Framework workflow for Archiving Connectors
+get https://{{hostname}}/api/accountConfig/ifWorkflows
+Accept: application/json
+Authorization: Basic {{api}}

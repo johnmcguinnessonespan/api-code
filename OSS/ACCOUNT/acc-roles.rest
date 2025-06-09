@@ -1,0 +1,74 @@
+@accountRoleId=6994e746-f371-4d4c-8035-072b5c518e60
+@senderId=
+
+### Retrieves account role information for the current system account.
+get {{hostname}}/api/account/roles
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Creates a new account role for an account
+post {{hostname}}/api/account/roles
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "name": "post_tring",
+  "permissions": [
+    "transaction.transaction_from_scratch"
+  ],
+  "description": "post_string",
+  "enabled": false
+}
+
+### Updates an existing account role.
+put {{hostname}}/api/account/roles/{{accountRoleId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+    "enabled": true
+}
+
+### Retrieves an account role.
+get {{hostname}}/api/account/roles/{{accountRoleId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Deletes an account role.
+delete {{hostname}}/api/account/roles/{{accountRoleId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+
+### Retrieves the list of user IDs assigned to a given role.
+get {{hostname}}/api/account/roles/{{accountRoleId}}/users
+Accept: application/json
+Authorization: Basic {{api}}
+ 
+### Retrieves the account roles assigned to the specified user.
+get {{hostname}}/api/account/senders/{{senderId}}/roles
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Assigns account roles to a user in specified account.
+post {{hostname}}/api/account/senders/{{senderId}}/roles
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "accountId": "string",
+  "userId": "string",
+  "accountRoles": [
+    {
+      "id": "string",
+      "name": "string",
+      "permissions": [
+        "string"
+      ],
+      "description": "string",
+      "enabled": false,
+      "inherited": true,
+      "predefined": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+### Retrieves account usage
+get {{hostname}}/api/account/usage 
+Accept: application/json
+Authorization: Basic {{api}}

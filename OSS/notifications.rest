@@ -1,0 +1,39 @@
+@packageId=Q01e1TJLbdn6K39uS2aAZlQ9QN0=
+@roleId=
+@documentId=
+@approvalId=
+
+### Resends a notification to a signer.
+post {{hostname}}/api/packages/{{packageId}}/notifications
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "email": "john.cyclist.mcguinness+smaycas@gmail.com",
+  "message": "Bloody sign ASAP!"
+}
+
+### Sends a notification to the signers linked to a role.
+post {{hostname}}/api/packages/{{packageId}}/roles/{{roleId}}/notifications
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "email": "john.cyclist.mcguinness+smaycas@gmail.com",
+  "message": "Bloody sign ASAP!"
+}
+
+### Sends an SMS notification to the signers linked to a role.
+post {{hostname}}/api/packages/{{packageId}}/roles/{{roleId}}/sms_notifications
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Sends a mobile notification.
+post {{hostname}}/api/packages/{{packageId}}/documents/{{documentId}}/approvals/{{approvalId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Resends the SMS code to the signer.
+post {{hostname}}/api/sms/resend
+Accept: application/json
+Authorization: Basic {{api}}

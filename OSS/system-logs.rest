@@ -1,0 +1,25 @@
+@date= 2025-05-16
+
+### Retrieves management logs report.
+get {{hostname}}/api/logs/management
+?date={{date}}
+Accept: text/csv
+Authorization: Basic {{api}}
+
+### Retrieves access logs report.
+get {{hostname}}/api/logs/access
+?date={{date}}
+Accept: text/csv
+Authorization: Basic {{api}}
+
+### Retrieves delegation logs report.
+get {{hostname}}/api/logs/delegation
+?date={{date}}
+Accept: text/csv
+Authorization: Basic {{api}}
+
+### Retrieves system update logs report.
+get {{hostname}}/api/logs/systemUpdate
+?date={{date}}
+Accept: text/csv
+Authorization: Basic {{api}}

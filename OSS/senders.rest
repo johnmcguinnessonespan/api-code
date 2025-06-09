@@ -1,0 +1,123 @@
+@search=john.mcguinness
+@from=0
+@to=100
+@roleId=
+@senderId=dj4JsWbVG2k9
+
+### Retrieves a list of the users in an account.
+get {{hostname}}/api/account/senders
+    ?search={{search}}
+    &from={{from}}
+    &to={{to}}
+//    &roleId=
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Creates a new user in an account.
+post {{hostname}}/api/account/senders
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "title": "string",
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string", 
+  "name": "string",
+  "type": "REGULAR"
+}  
+
+### Retrieves detailed Account information about a user.
+get {{hostname}}/api/account/senders/{{senderId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Updates a Sender's details.
+post {{hostname}}/api/account/senders/{{senderId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "name": "string",
+  "type": "REGULAR",
+  "signature": {
+    "handdrawn": "string",
+    "textual": {
+      "color": "string",
+      "font": "string"
+    }
+  }
+}
+
+### Deletes a Sender from the account.
+delete {{hostname}}/api/account/senders/{{senderId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Invites a user to join the account.
+post {{hostname}}/api/account/senders/{{senderId}}/invite
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "name": "string",
+  "type": "REGULAR",
+  "signature": {
+    "handdrawn": "string",
+    "textual": {
+      "color": "string",
+      "font": "string"
+    }
+  }
+}
+
+### Updates a Sender's password.
+post {{hostname}}/api/account/senders/{{senderId}}/password
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "email": "string",
+  "newPassword": "string",
+  "password": "string"
+}
+
+### Updates a Sender's password.
+post {{hostname}}/api/account/senders/{{senderId}}/resetpassword
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "name": "string",
+  "type": "REGULAR",
+  "signature": {
+    "handdrawn": "string",
+    "textual": {
+      "color": "string",
+      "font": "string"
+    }
+  }
+}
+
+### Retrieves a user's default signature image.
+get {{hostname}}/api/account/senders/{{senderId}}/signature/image
+Accept: application/json
+Authorization: Basic {{api}}
+
+### RUploads a default signature image.
+post {{hostname}}/api/account/senders/{{senderId}}/signature/image
+Accept: application/json
+Authorization: Basic {{api}}
+
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="135-signers.img"
+
+< ./135-signers.img
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### Deletes a user's default signature image..
+get {{hostname}}/api/account/senders/{{senderId}}/signature/image
+Accept: application/json
+Authorization: Basic {{api}}

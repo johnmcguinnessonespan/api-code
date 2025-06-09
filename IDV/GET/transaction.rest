@@ -1,0 +1,27 @@
+@transaction_id=27ceecc2-a8d1-41e1-9789-c40bb0aa1eb5
+
+### Returns Veridas data
+get {{idvHostname}}/api/transaction/{{transaction_id}}/verification
+Accept: application/json
+Authorization: Bearer {{token}}  
+
+### Returns OSS JSON
+get {{idvHostname}}/api/transaction/{{transaction_id}}
+Accept: application/json
+Authorization: Bearer {{token}}
+
+### Vague
+{{idvHostname}}/api/transaction/{{transaction_id}}/event
+Accept: application/json
+Authorization: Bearer {{token}}
+
+###
+{{idvHostname}}/api/transaction/{{transaction_id}}/document/AuditTrailDocument/pdf
+Accept: application/json
+Authorization: Bearer {{token}}
+
+
+###
+{{idvHostname}}/api/transaction/{{transaction_id}}/SEPA_C1/pdf
+Accept: application/json
+Authorization: Bearer {{token}}

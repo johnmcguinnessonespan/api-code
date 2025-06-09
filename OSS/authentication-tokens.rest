@@ -1,0 +1,43 @@
+@packageId=FuqEwFa54M8UqD4ZS7_4HNR1es8=
+@signerEmail=
+@signerId=
+
+### Creates a new authentication token
+post {{hostname}}/api/authenticationTokens/user
+Authorization: Basic {{api}}
+Content-Type: application/json
+
+### Creates a new sender authentication token 
+post {{hostname}}/api/authenticationTokens/sender
+Accept: application/json
+Authorization: Basic {{api}} 
+Content-Type: application/json
+
+{
+  "packageId": "{{packageId}}",
+  "value": "{{signerEmail}}"
+}
+
+### Creates a new multi-use signer authentication token
+post {{hostname}}/api/authenticationTokens/signer/multiuse
+Accept: application/json
+Authorization: Basic {{api}} 
+Content-Type: application/json
+
+{
+"packageId":"[[packageId}}",
+"signerId":"{{signerId}}"
+}
+
+### Creates a new single use signer authentication token
+post {{hostname}}/api/authenticationTokens/signer/singleUse
+Accept: application/json
+Authorization: Basic {{api}} 
+Content-Type: application/json
+
+{
+"packageId":"[[packageId}}",
+"signerId":"{{SignerEail}}"
+}
+
+// {{hostname}}//auth?senderAuthenticationToken=VALUE&target={{hostname}}/destination

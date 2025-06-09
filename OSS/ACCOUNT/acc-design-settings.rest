@@ -1,0 +1,31 @@
+### Retrieves your current Designer settings
+get {{hostname}}/api/account/admin/accountSettings/designerSettings
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Updates your Designer settings
+patch {{hostname}}/api/account/admin/accountSettings/designerSettings
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "send": true,
+  "done": true,
+  "settings": true,
+  "documentVisibility": true,
+  "addDocument": true,
+  "editDocument": true,
+  "deleteDocument": true,
+  "addSigner": true,
+  "editRecipient": true,
+  "rolePickerSender": true,
+  "saveLayout": true,
+  "applyLayout": true,
+  "showSharedLayouts": false,
+  "defaultSignatureType": "Sign"
+}
+
+### Deletes customized Designer settings
+delete {{hostname}}/api/account/admin/accountSettings/designerSettings
+Accept: application/json
+Authorization: Basic {{api}}

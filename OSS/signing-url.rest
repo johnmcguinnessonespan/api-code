@@ -1,0 +1,7 @@
+@packageId=WIj_1MAfrIw-ON7LMGEe9C0FC6A=
+@roleId=a592b55d-4b1f-4756-8417-a3be8372b088
+
+### Retrieves the url that a signer can use to sign a package.
+get {{hostname}}/api/packages/{{packageId}}/roles/{{roleId}}/signingUrl
+Accept: application/json
+Authorization: Basic {{api}}

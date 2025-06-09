@@ -1,0 +1,79 @@
+### Retrieves customized New Signer Experience settings.
+get {{hostname}}/api/account/admin/signingUiOptions
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Patch customized New Signer Experience settings.
+patch {{hostname}}/api/account/admin/signingUiOptions
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "overviewOptions": {
+    "title": true,
+    "body": true,
+    "documentSection": true,
+    "uploadSection": true
+  },
+  "completeSummaryOptions": {
+    "message": true,
+    "title": true,
+    "documentSection": false,
+    "uploadSection": false,
+    "review": true,
+    "continue": true,
+    "download": true
+  },
+  "inpersonWelcomeOptions": {
+    "body": true,
+    "title": true,
+    "recipientEmail": true,
+    "recipientName": true,
+    "recipientRole": true,
+    "recipientActionRequired": true,
+    "recipientStatus": true
+  },
+  "inpersonHostThankYouOptions": {
+    "body": true,
+    "title": true,
+    "continue": false,
+    "recipientEmail": true,
+    "recipientName": true,
+    "recipientRole": true,
+    "recipientStatus": true,
+    "downloadButton": true,
+    "reviewDocumentsButton": true
+  },
+  "notaryWelcomeOptions": {
+    "body": true,
+    "title": true,
+    "recipientEmail": true,
+    "recipientName": true,
+    "recipientRole": true,
+    "recipientActionRequired": true,
+    "recipientStatus": true,
+    "notaryTag": true
+  },
+  "notaryHostThankYouOptions": {
+    "body": true,
+    "title": true,
+    "continue": false,
+    "recipientEmail": true,
+    "recipientName": true,
+    "recipientRole": true,
+    "recipientStatus": true,
+    "downloadButton": true,
+    "reviewDocumentsButton": true,
+    "notaryTag": true
+  },
+  "vrOverviewOptions": {
+    "title": true,
+    "body": true,
+    "documentSection": true
+  }
+}
+
+### Deletes customized New Signer Experience settings.
+delete {{hostname}}/api/account/admin/signingUiOptions
+Accept: application/json
+Authorization: Basic {{api}}

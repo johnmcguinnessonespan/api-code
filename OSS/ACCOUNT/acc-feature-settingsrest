@@ -1,0 +1,49 @@
+### Retrieves a list of all your current Backoffice Feature settings.
+get {{hostname}}/api/account/admin/accountSettings/featureSettings
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Updates a list of all your current Backoffice Feature settings.
+patch {{hostname}}/api/account/admin/accountSettings/featureSettings
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "attachments": true,
+  "evidenceSummary": true,
+  "forceLogin": false,
+  "groups": true,
+  "qnaAuth": true,
+  "enforceAuth": true,
+  "delegation": true,
+  "optionalSignature": true,
+  "flattenSignerDocuments": false,
+  "sendToMobile": true,
+  "documentVisibility": true,
+  "customFields": true,
+  "mobileCapture": true,
+  "maskResponse": true,
+  "allowInPersonForAccountSenders": false,
+  "disableInPersonActivationEmail": false,
+  "emailDocumentsAndEvidenceSummary": false,
+  "disableFooter": true,
+  "preventConsentRemoval": false,
+  "conditionalFields": true,
+  "passwordManagement": true,
+  "allowCheckboxConsentApproval": true,
+  "deliverDocumentsByEmail": true,
+  "forceTransactionOwnerLogin": false,
+  "inAppReports": true,
+  "uploadSignatureImage": true,
+  "overrideRecipientsPreferredLanguage": false,
+  "imprintFields": false,
+  "enableRecipientHistory": true,
+  "complianceVault": false,
+  "allowSignersDownloadEvidenceSummary": false,
+  "limitSupportedLanguages": false
+}
+
+### Deletes a list of all your current Backoffice Feature settings.
+delete {{hostname}}/api/account/admin/accountSettings/featureSettings
+Accept: application/json
+Authorization: Basic {{api}}

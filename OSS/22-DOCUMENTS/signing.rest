@@ -1,0 +1,16 @@
+@packageId=
+
+### Creates a signature confirmation
+post {{hostname}}/api/packages/{{packageId}}/documents/signConfirm
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Signs all documents in a package
+post {{hostname}}/api/packages/{{packageId}}/documents/signed_documents
+Accept: application/json
+Authorization: Basic {{api}}
+
+TODO
+
+
+

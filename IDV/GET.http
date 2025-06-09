@@ -1,0 +1,10 @@
+###
+get https://{{hostname}}/
+Accept: application/json
+Authorization: Basic {{api}}
+
+
+###
+get https://{{hostname}}/api/packages/dSGq1xfDWdSxcDvpHtz-snUSW_o=/audit/idv
+Accept: application/json
+Authorization: Basic {{api}}

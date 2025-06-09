@@ -1,0 +1,46 @@
+@transactionID=
+
+###
+put {{idvHostname}}/api/secure/transaction/{{transaction_id}}/event
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+put {{idvHostname}}/api/secure/transaction
+Content-Type: application/json
+Authorization: Bearer {{token}}
+{
+   "workflow_id":"c9003007-dbb8-4c3a-aed9-aee5852901b1",
+   "language":"french",
+   "brand_id":"fordfrance",
+   "users":[
+      {
+         "first_name":"John",
+         "last_name":"McGuinness",
+         "role":"Customer1",
+         "phone_number":"+447485213049",
+         "dob":"1990-01-05T00:00:00.000Z",
+         "address":{
+            "country_code":"CA",
+            "county_or_province":"QC"
+         }
+      },
+      {
+         "role":"Lender"
+      }
+   ],
+   "tokens":[
+      {
+         "role":"Customer1"
+      },
+      {
+         "role":"unknown"
+      }
+   ],
+   "documents":[
+      {
+         "id":"Conditions_Generale_CreditClassique",
+         "document_template_id":"3c9df65a-364c-408b-84a0-56c8d2f79262"
+      }
+   ]
+}

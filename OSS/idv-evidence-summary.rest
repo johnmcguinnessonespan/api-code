@@ -1,0 +1,17 @@
+@packageId=
+
+### Retrieves IDV Evidence Summary in Json format
+get {{idvHostname}}/api/packages/{{packageId}}/audit/idv
+Accept: application/json
+Authorization: Bearer {{token}}
+
+### Gets a list of image in Detailed Verification Report
+get {{idvHostname}}/api/packages/{{packageId}}/audit/idv/dvrImageUrls
+Accept: application/json
+Authorization: Bearer {{token}}
+
+### Downloads selected IDV image
+get {{idvHostname}}/api/packages/{{packageId}}/audit/idv/idvSignerImage
+Accept: application/json
+Authorization: Bearer {{token}}
+

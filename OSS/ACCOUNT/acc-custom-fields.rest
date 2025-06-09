@@ -1,0 +1,46 @@
+@customFieldsId=
+
+### Retrieves all custom fields in an account
+get {{hostname}}/api/account/customfields
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Updates an account custom field or Adds a custom field to an account
+put {{hostname}}/api/account/customfields
+//post {{hostname}}/api/account/customfields
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "value": "string",
+  "name": "string",
+  "id": "string",
+  "required": true,
+  "data": {
+    "additionalProp1": {},
+    "additionalProp2": {},
+    "additionalProp3": {}
+  },
+  "translations": [
+    {
+      "data": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      },
+      "description": "string",
+      "id": "string",
+      "language": "string",
+      "name": "string"
+    }]
+}
+
+### Retrieves an account specified custom field
+get {{hostname}}/api/account/customfields/{{customFieldsId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+## Deletes an account custom field by its ID
+delete {{hostname}}/api/account/customfields/{{customFieldsId}}
+Accept: application/json
+Authorization: Basic {{api}}

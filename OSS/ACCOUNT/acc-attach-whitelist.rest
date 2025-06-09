@@ -1,0 +1,21 @@
+### Retrieves your current attachments whitelist
+get {{hostname}}/api/account/admin/accountSettings/attachmentsWhitelist
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Updates your attachments whitelist
+put {{hostname}}/api/account/admin/accountSettings/attachmentsWhitelist
+Accept: application/json
+Authorization: Basic {{api}}
+
+[
+  "PDF",
+  "TXT",
+  "JPG",
+  "DOC"
+]
+
+### Deletes and resets attachments whitelist
+delete {{hostname}}/api/account/admin/accountSettings/attachmentsWhitelist
+Accept: application/json
+Authorization: Basic {{api}}

@@ -1,0 +1,364 @@
+@packageId=
+@documentId=
+
+###
+get {{hostname}}/api/packages/{{packageId}}/documents/{{documentId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+###
+put {{hostname}}/api/packages/{{packageId}}/documents/{{documentId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "status": "string",
+  "fields": [
+    {
+      "value": "string",
+      "name": "string",
+      "type": "SIGNATURE",
+      "validation": {
+        "maxLength": 0,
+        "pattern": "string",
+        "required": true,
+        "errorMessage": "string",
+        "errorCode": 0,
+        "enum": [
+          "string"
+        ],
+        "minLength": 0,
+        "group": "string",
+        "minimumRequired": 0
+      },
+      "binding": "string",
+      "id": "string",
+      "data": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      },
+      "page": 0,
+      "left": 0,
+      "extractAnchor": {
+        "topOffset": 100,
+        "characterIndex": 3,
+        "anchorPoint": "TOPLEFT",
+        "index": 2,
+        "text": "Signature:",
+        "width": 200,
+        "height": 50,
+        "leftOffset": 20
+      },
+      "extract": true,
+      "subtype": "FULLNAME",
+      "width": 0,
+      "top": 0,
+      "height": 0,
+      "textAlignment": "string"
+    }
+  ],
+  "imprintFields": [
+    {
+      "value": "string",
+      "name": "string",
+      "type": "INPUT",
+      "id": "string",
+      "data": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      },
+      "page": 0,
+      "left": 0,
+      "subtype": "LABEL",
+      "width": 0,
+      "top": 0,
+      "height": 0,
+      "binding": "string",
+      "editable": true
+    }
+  ],
+  "name": "string",
+  "size": 0,
+  "description": "string",
+  "index": 0,
+  "id": "string",
+  "data": {
+    "additionalProp1": {},
+    "additionalProp2": {},
+    "additionalProp3": {}
+  },
+  "signedHash": "string",
+  "extract": true,
+  "extractionTypes": [
+    "string"
+  ],
+  "tagged": true,
+  "externalSigned": true,
+  "external": {
+    "id": "string",
+    "provider": "string",
+    "providerName": "string",
+    "data": {
+      "additionalProp1": {},
+      "additionalProp2": {},
+      "additionalProp3": {}
+    }
+  },
+  "approvals": [
+    {
+      "fields": [
+        {
+          "value": "string",
+          "name": "string",
+          "type": "SIGNATURE",
+          "validation": {
+            "maxLength": 0,
+            "pattern": "string",
+            "required": true,
+            "errorMessage": "string",
+            "errorCode": 0,
+            "enum": [
+              "string"
+            ],
+            "minLength": 0,
+            "group": "string",
+            "minimumRequired": 0
+          },
+          "binding": "string",
+          "id": "string",
+          "data": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "page": 0,
+          "left": 0,
+          "extractAnchor": {
+            "topOffset": 100,
+            "characterIndex": 3,
+            "anchorPoint": "TOPLEFT",
+            "index": 2,
+            "text": "Signature:",
+            "width": 200,
+            "height": 50,
+            "leftOffset": 20
+          },
+          "extract": true,
+          "subtype": "FULLNAME",
+          "width": 0,
+          "top": 0,
+          "height": 0,
+          "textAlignment": "string"
+        }
+      ],
+      "name": "string",
+      "id": "string",
+      "data": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      },
+      "role": "string",
+      "optional": true,
+      "enforceCaptureSignature": true,
+      "accepted": "2024-12-07T15:52:49.497Z",
+      "signed": "2024-12-07T15:52:49.497Z"
+    }
+  ],
+  "base64Content": "string",
+  "signerVerificationToken": "string",
+  "pages": [
+    {
+      "id": "string",
+      "index": 0,
+      "version": 0,
+      "left": 0,
+      "width": 0,
+      "top": 0,
+      "height": 0
+    }
+  ]
+}
+
+###
+post {{hostname}}/api/packages/{{packageId}}/documents/{{documentId}}
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "status": "string",
+  "fields": [
+    {
+      "value": "string",
+      "name": "string",
+      "type": "SIGNATURE",
+      "validation": {
+        "maxLength": 0,
+        "pattern": "string",
+        "required": true,
+        "errorMessage": "string",
+        "errorCode": 0,
+        "enum": [
+          "string"
+        ],
+        "minLength": 0,
+        "group": "string",
+        "minimumRequired": 0
+      },
+      "binding": "string",
+      "id": "string",
+      "data": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      },
+      "page": 0,
+      "left": 0,
+      "extractAnchor": {
+        "topOffset": 100,
+        "characterIndex": 3,
+        "anchorPoint": "TOPLEFT",
+        "index": 2,
+        "text": "Signature:",
+        "width": 200,
+        "height": 50,
+        "leftOffset": 20
+      },
+      "extract": true,
+      "subtype": "FULLNAME",
+      "width": 0,
+      "top": 0,
+      "height": 0,
+      "textAlignment": "string"
+    }
+  ],
+  "imprintFields": [
+    {
+      "value": "string",
+      "name": "string",
+      "type": "INPUT",
+      "id": "string",
+      "data": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      },
+      "page": 0,
+      "left": 0,
+      "subtype": "LABEL",
+      "width": 0,
+      "top": 0,
+      "height": 0,
+      "binding": "string",
+      "editable": true
+    }
+  ],
+  "name": "string",
+  "size": 0,
+  "description": "string",
+  "index": 0,
+  "id": "string",
+  "data": {
+    "additionalProp1": {},
+    "additionalProp2": {},
+    "additionalProp3": {}
+  },
+  "signedHash": "string",
+  "extract": true,
+  "extractionTypes": [
+    "string"
+  ],
+  "tagged": true,
+  "externalSigned": true,
+  "external": {
+    "id": "string",
+    "provider": "string",
+    "providerName": "string",
+    "data": {
+      "additionalProp1": {},
+      "additionalProp2": {},
+      "additionalProp3": {}
+    }
+  },
+  "approvals": [
+    {
+      "fields": [
+        {
+          "value": "string",
+          "name": "string",
+          "type": "SIGNATURE",
+          "validation": {
+            "maxLength": 0,
+            "pattern": "string",
+            "required": true,
+            "errorMessage": "string",
+            "errorCode": 0,
+            "enum": [
+              "string"
+            ],
+            "minLength": 0,
+            "group": "string",
+            "minimumRequired": 0
+          },
+          "binding": "string",
+          "id": "string",
+          "data": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "page": 0,
+          "left": 0,
+          "extractAnchor": {
+            "topOffset": 100,
+            "characterIndex": 3,
+            "anchorPoint": "TOPLEFT",
+            "index": 2,
+            "text": "Signature:",
+            "width": 200,
+            "height": 50,
+            "leftOffset": 20
+          },
+          "extract": true,
+          "subtype": "FULLNAME",
+          "width": 0,
+          "top": 0,
+          "height": 0,
+          "textAlignment": "string"
+        }
+      ],
+      "name": "string",
+      "id": "string",
+      "data": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      },
+      "role": "string",
+      "optional": true,
+      "enforceCaptureSignature": true,
+      "accepted": "2024-12-07T15:54:13.762Z",
+      "signed": "2024-12-07T15:54:13.762Z"
+    }
+  ],
+  "base64Content": "string",
+  "signerVerificationToken": "string",
+  "pages": [
+    {
+      "id": "string",
+      "index": 0,
+      "version": 0,
+      "left": 0,
+      "width": 0,
+      "top": 0,
+      "height": 0
+    }
+  ]
+}
+
+###
+delete {{hostname}}/api/packages/{{packageId}}/documents/{{documentId}}
+Accept: application/json
+Authorization: Basic {{api}}

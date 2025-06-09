@@ -1,0 +1,36 @@
+@packageId=
+
+### Retrieves Document Visibility information
+get {{hostname}}/api/packages/{packageId}/documents/visibility
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Updates Document Visibility
+post {{hostname}}/api/packages/{packageId}/documents/visibility
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "configurations": [
+    {
+      "documentUid": "string",
+      "roleUids": [
+        "string"
+      ],
+      "id": "string",
+      "data": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      },
+      "name": "string"
+    }
+  ],
+  "id": "string",
+  "data": {
+    "additionalProp1": {},
+    "additionalProp2": {},
+    "additionalProp3": {}
+  },
+  "name": "string"
+}

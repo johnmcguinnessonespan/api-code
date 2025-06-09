@@ -1,0 +1,40 @@
+@parentAccountId = 2l8jHXM2mSQP
+
+### Retrieves a list of the subaccounts.
+get {{hostname}}/api/account/accessibleaccounts
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Retrieves a list of API keys for this current user in the subaccounts.
+get {{hostname}}/api/account/subaccountApiKeys
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Retrieves a list of the subaccounts.
+get {{hostname}}/api/account/subaccounts
+Accept: application/json
+Authorization: Basic {{api}}
+
+### Creates a new subaccount for the current account.
+post {{hostname}}/api/account/subaccounts
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "parentAccountId": "{{parentAccountId}}",
+  "name": "aString",
+  "timezoneId": "CST",
+  "language": "en"
+}
+
+### vUpdates a subAccount.
+post {{hostname}}/api/account/subaccounts/odLyOtGFbyYG
+Accept: application/json
+Authorization: Basic {{api}}
+
+{
+  "parentAccountId": "{{parentAccountId}}",
+  "name": "aString",
+  "timezoneId": "CET",
+  "language": "de"
+}
