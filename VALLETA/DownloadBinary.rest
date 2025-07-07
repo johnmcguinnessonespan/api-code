@@ -1,0 +1,8 @@
+### Download image binary data
+@transaction_id = 32432423432
+@sfs_url = wewqewqewq
+
+get {{customer-url}}api/transaction/{{transaction_id}}/data?url={{sfs_url}}
+Accept: image/jpeg
+Authorization: Bearer {{token}}
+

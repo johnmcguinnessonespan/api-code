@@ -1,0 +1,14 @@
+### Mark Transaction for erasure
+
+post {{customer-url}}/api/transactions/mark-for-erasure
+Content-Type: application/json
+Authorization: Bearer {{token}}
+Accept: 
+
+{
+  grace_period: 25,
+  transaction_ids: [
+    "xxxxx-xxxxx-xxxxx-xxxxxx",
+    "xxxxx-xxxxx-xxxxx-xxxxxx"
+    ]
+}

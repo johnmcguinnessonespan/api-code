@@ -1,0 +1,10 @@
+### Mark Transaction for erasure
+
+post {{customer-url}}/api/transactions/mark-for-erasure
+Accept: application/json
+Authorization: Bearer {{token}}
+Accept: 
+
+{
+  "role": "Customer"
+}"

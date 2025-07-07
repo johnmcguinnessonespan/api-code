@@ -1,0 +1,14 @@
+### Unmark Transaction for erasure
+@transaction_id = 76436264732848328427897428937
+
+post {{customer-url}}/api/transaction/{{transaction_id}}/generate-audit-trail?force=true
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  grace_period: 25,
+  transaction_ids: [
+    "xxxxx-xxxxx-xxxxx-xxxxxx",
+    "xxxxx-xxxxx-xxxxx-xxxxxx"
+    ]
+}

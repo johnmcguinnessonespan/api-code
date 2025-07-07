@@ -1,0 +1,6 @@
+### transaction status and metadata
+@transaction_id = 787827874270973749283748
+
+get {{customer-url}}/api/transaction/{{transaction_id}}?withVerifications=true
+Accept: application/json,text/javascript
+Authorization: Bearer {{token}}

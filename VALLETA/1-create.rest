@@ -1,0 +1,54 @@
+### Mark Transaction for erasure
+
+post {{customer-url}}/api/transactions/mark-for-erasure
+Content-Type: application/json
+Authorization: Bearer {{token}}
+Accept: 
+
+{
+  "workflow_id": "8d52e695-daea-4aad-9875-ef3b70f5febc",
+  "language": "en",
+  "brand_id": "idvgl006brd01",
+  "opaque_id": "WorkflowExternalMitAt1234",
+  "users": [{
+    "groups":["visible"],
+    "first_name": "John",
+    "last_name": "McGuinness",
+    "role": "Customer",
+    "phone_number": "+447485213049",
+    "dob": "2000-01-01T00:00:00.000Z",
+    "address": {
+      "country_code": "CA"
+        }
+    }
+  ],
+  "tokens": [
+    {
+      "role": "Customer"
+    }
+  ],
+   "configuration":{
+        "redirects": [
+            {
+                "id": "REDIRECT_SESSION_TIMEOUT",
+                "url": "https://bov.bovplusappretail.com/?user=Customer&transaction=52f56d55-0a5c-469b-9a21-a41e34433bcc&opaqueId=WorkflowExternalMitAt1234&deviceId=669601a3-09bc-4b47-9c69-34e3573f3637"
+            },
+            {
+                "id": "REDIRECT_DEFAULT_URL",
+                "url": "https://bov.bovplusappretail.com/?user=Customer&transaction=52f56d55-0a5c-469b-9a21-a41e34433bcc&opaqueId=WorkflowExternalMitAt1234&deviceId=669601a3-09bc-4b47-9c69-34e3573f3637"
+            },
+            {
+                "id": "REDIRECT_DOCID_PASS",
+                "url": "https://bov.bovplusappretail.com/?user=Customer&transaction=52f56d55-0a5c-469b-9a21-a41e34433bcc&opaqueId=WorkflowExternalMitAt1234&deviceId=669601a3-09bc-4b47-9c69-34e3573f3637"
+            },
+            {
+                "id": "REDIRECT_ERROR",
+                "url": "https://bov.bovplusappretail.com/?user=Customer&transaction=52f56d55-0a5c-469b-9a21-a41e34433bcc&opaqueId=WorkflowExternalMitAt1234&deviceId=669601a3-09bc-4b47-9c69-34e3573f3637"
+            },
+            {
+                "id": "REDIRECT_DOCID_FAIL",
+                "url": "https://bov.bovplusappretail.com/?user=Customer&transaction=52f56d55-0a5c-469b-9a21-a41e34433bcc&opaqueId=WorkflowExternalMitAt1234&deviceId=669601a3-09bc-4b47-9c69-34e3573f3637"
+            }
+        ]
+    }
+}
